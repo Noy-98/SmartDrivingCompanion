@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="#B5BAB9">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/go_back_bttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:rippleColor="#B5BAB9"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        app:fabCustomSize="50dp"
+        android:contentDescription="Go back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Signup"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="First Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Last Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Email Address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Password"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_text_input_layout_2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Confirm Password"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By signing up for our mobile application, you confirm that you have read, understood, and agree to be bound by these Terms and Conditions and our Privacy Policy, in compliance with Republic Act No. 10173, also known as the Data Privacy Act of 2012 of the Philippines, which ensures the protection of personal information collected by the application. During registration, we may collect information such as your name, email address, location, and other necessary details like phone number or preferences to ensure the app's functionality. You agree to provide accurate and complete information. The collected data will be used to create and manage your account, enhance app functionality, personalize your experience, and send important updates or promotional content as outlined in our Privacy Policy. You are responsible for maintaining the confidentiality of your account credentials and agree not to share them or misuse the app for unauthorized purposes. We employ security measures to protect your data, but you acknowledge that no system is entirely secure, and we are not liable for unauthorized access resulting from circumstances beyond our control. We reserve the right to suspend or terminate your account if false information is provided, misuse occurs, or legal issues arise. These Terms and Conditions may be updated periodically, and continued use of the app constitutes acceptance of any changes. We are not liable for damages, losses, or issues arising from app usage, third-party services, or unauthorized access due to user negligence. These Terms are governed by the laws of the Philippines, and disputes will be resolved in accordance with Philippine law. If you have any questions or concerns, please contact us at IoTSafetyDrivingCompanion@gmail.com. By signing up, you acknowledge your agreement to these Terms and Conditions; if you do not agree, do not proceed with registration."
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/signup_bttn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/button_ripple_effect"
+                    android:text="Signup"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#FD7D33"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

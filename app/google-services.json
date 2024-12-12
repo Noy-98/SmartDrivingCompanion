@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "792962804760",
+    "firebase_url": "https://smartdrivingcompanionproj-default-rtdb.firebaseio.com",
+    "project_id": "smartdrivingcompanionproj",
+    "storage_bucket": "smartdrivingcompanionproj.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792962804760:android:b2271f54faba4e5737a76d",
+        "android_client_info": {
+          "package_name": "com.itech.smartdrivingcompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNCenSISx-N6M_P-JeBRHJpVDY1t1bhv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
